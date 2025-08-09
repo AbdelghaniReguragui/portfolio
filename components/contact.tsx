@@ -15,6 +15,9 @@ export function Contact() {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
   const contactInfo = [
     {
       icon: Mail,
@@ -42,10 +45,51 @@ export function Contact() {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    
+    try {
+      // Créer le contenu de l'email formaté
+      const emailSubject = encodeURIComponent(formData.subject || 'Message from Portfolio');
+      const emailBody = encodeURIComponent(
+        `Nom: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Sujet: ${formData.subject}\n\n` +
+        `Message:\n${formData.message}\n\n` +
+        `---\nEnvoyé depuis: https://abdelghanireguragui.com`
+      );
+      
+      // Ouvrir le client email avec les données pré-remplies
+      const mailtoLink = `mailto:abdelghanireguragui@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+      window.open(mailtoLink, '_blank');
+      
+      // Réinitialiser le formulaire après succès
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+      
+      setSubmitStatus('success');
+      
+      // Réinitialiser le statut après 5 secondes
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 5000);
+      
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setSubmitStatus('error');
+      
+      // Réinitialiser le statut après 5 secondes
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -174,10 +218,31 @@ export function Contact() {
                 />
               </div>
               
-              <Button type="submit" className="w-full">
+              <Button 
+                type="submit" 
+                className="w-full"
+                disabled={isSubmitting}
+              >
                 <Send className="w-4 h-4 mr-2" />
-                Send Message
+                {isSubmitting ? 'Envoi en cours...' : 'Send Message'}
               </Button>
+              
+              {/* Messages de statut */}
+              {submitStatus === 'success' && (
+                <div className="mt-4 p-4 bg-green-100 dark:bg-green-900/20 border border-green-300 dark:border-green-800 rounded-lg">
+                  <p className="text-green-700 dark:text-green-300 text-sm">
+                    ✅ Votre client email va s'ouvrir avec le message pré-rempli. Merci !
+                  </p>
+                </div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <div className="mt-4 p-4 bg-red-100 dark:bg-red-900/20 border border-red-300 dark:border-red-800 rounded-lg">
+                  <p className="text-red-700 dark:text-red-300 text-sm">
+                    ❌ Erreur lors de l'envoi. Veuillez essayer de m'envoyer un email directement : abdelghanireguragui@gmail.com
+                  </p>
+                </div>
+              )}
             </form>
           </motion.div>
         </div>

@@ -3,8 +3,43 @@
 import { motion } from 'framer-motion';
 import { Download, MapPin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import Image from 'next/image';
 
 export function Hero() {
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownloadCV = async () => {
+    setIsDownloading(true);
+    try {
+      const cvUrl = '/cv/Abdelghani_Reguragui_CV.pdf';
+      
+      // Check if file exists first
+      const response = await fetch(cvUrl, { method: 'HEAD' });
+      
+      if (response.ok) {
+        const link = document.createElement('a');
+        link.href = cvUrl;
+        link.download = 'Abdelghani_Reguragui_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } else {
+        alert('CV file not found. Please contact me directly for my latest CV.');
+      }
+    } catch (error) {
+      console.error('Error downloading CV:', error);
+      alert('Error downloading CV. Please try again or contact me directly.');
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+
+  const handleGetInTouch = () => {
+    const contactSection = document.getElementById('contact');
+    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -52,13 +87,23 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
-              <Button size="lg" className="w-full sm:w-auto">
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto"
+                onClick={handleGetInTouch}
+              >
                 <Mail className="w-4 h-4 mr-2" />
                 Get In Touch
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full sm:w-auto"
+                onClick={handleDownloadCV}
+                disabled={isDownloading}
+              >
                 <Download className="w-4 h-4 mr-2" />
-                Download CV
+                {isDownloading ? 'Downloading...' : 'Download CV'}
               </Button>
             </motion.div>
 
@@ -79,14 +124,32 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-500 to-green-500 p-1">
-                <div className="w-full h-full rounded-full bg-muted flex items-center justify-center">
-                  <div className="text-6xl font-bold text-muted-foreground">AR</div>
+            <div className="relative group">
+              <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-500 to-green-500 p-1 transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:z-50 relative">
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <Image
+                    src="/images/abdelghani-reguragui.jpg"
+                    alt="Abdelghani Reguragui"
+                    width={600}
+                    height={600}
+                    quality={100}
+                    priority
+                    unoptimized
+                    className="w-full h-full object-cover transition-transform duration-500 ease-in-out"
+                    onError={(e) => {
+                      // Fallback vers les initiales si l'image n'est pas trouvée
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent) {
+                        parent.innerHTML = '<div class="w-full h-full flex items-center justify-center bg-muted"><div class="text-6xl font-bold text-muted-foreground">AR</div></div>';
+                      }
+                    }}
+                  />
                 </div>
               </div>
               <motion.div
-                className="absolute -top-4 -right-4 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center"
+                className="absolute -top-4 -right-4 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0"
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
               >
