@@ -1,34 +1,10 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
+import { ReactNode } from 'react';
 
-const inter = Inter({ subsets: ['latin'] });
-
-export const metadata: Metadata = {
-  title: 'Abdelghani Reguragui - Software Engineer',
-  description: 'Portfolio of Abdelghani Reguragui, Software Engineer specializing in .NET technologies, microservices architecture, and modern web development.',
-  keywords: ['Software Engineer', '.NET', 'React', 'Angular', 'Microservices', 'Clean Architecture'],
-  authors: [{ name: 'Abdelghani Reguragui' }],
-  openGraph: {
-    title: 'Abdelghani Reguragui - Software Engineer',
-    description: 'Portfolio of Abdelghani Reguragui, Software Engineer specializing in .NET technologies',
-    type: 'website',
-  },
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode; params: { locale: string } }) {
+  const messages = useMessages();
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      {children}
+    </NextIntlClientProvider>
   );
 }
