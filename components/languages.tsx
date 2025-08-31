@@ -43,7 +43,7 @@ export function Languages() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.8 }}
                 viewport={{ once: true }}
-                className="bg-background rounded-lg p-6 shadow-sm border"
+                className="bg-gradient-to-br from-green-500/40 via-emerald-500/40 to-teal-500/40 rounded-lg p-6 shadow-sm border"
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center">

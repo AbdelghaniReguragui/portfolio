@@ -27,7 +27,7 @@ export function Certifications() {
   ];
 
   return (
-    <section id="certifications" className="py-20">
+  <section id="certifications" className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export function Certifications() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-card rounded-lg p-6 shadow-sm border hover:shadow-md transition-shadow"
+              className="bg-gradient-to-br from-green-500/20 via-emerald-500/20 to-teal-500/20 rounded-lg p-6 shadow-sm border hover:shadow-md transition-shadow"
             >
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center mr-4">

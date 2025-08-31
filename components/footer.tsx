@@ -15,7 +15,7 @@ export function Footer() {
           className="text-center"
         >
           <p className="text-muted-foreground flex items-center justify-center">
-            Made with <Heart className="w-4 h-4 mx-2 text-red-500" /> by Abdelghani Reguragui
+            Made with <Heart className="w-4 h-4 mx-2 text-emerald-500" /> by Abdelghani Reguragui
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             © 2025 Abdelghani Reguragui. All rights reserved.

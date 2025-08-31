@@ -40,8 +40,8 @@ export function Contact() {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/abdelghani-reguragui',
-      href: 'https://www.linkedin.com/in/abdelghani-reguragui-5b89ab174'
+      value: 'linkedin.com/in/abdelghani-reguragui-5b89ab174',
+      href: 'https://www.linkedin.com/in/abdelghani-reguragui-5b89ab174/'
     }
   ];
 
@@ -133,8 +133,8 @@ export function Contact() {
                   viewport={{ once: true }}
                   className="flex items-center"
                 >
-                  <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mr-4">
-                    <info.icon className="w-5 h-5 text-blue-500" />
+                  <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mr-4">
+                    <info.icon className="w-5 h-5 text-emerald-500" />
                   </div>
                   <div>
                     <p className="font-semibold">{info.label}</p>
