@@ -44,7 +44,7 @@ export function Projects() {
       title: 'PIM (Product Information Management)',
       description: 'Design and Development of a Product Information Management (PIM) solution for the centralized management of both generic and specific product data at Showroomprivé.',
       technologies: ['.NET 6', 'ASP.NET MVC', 'Razor Pages', 'Kendo UI', 'MongoDB', 'Azure Service Bus', 'CQRS', 'DDD'],
-      image: '/images/logo-showroomprive%202.png',
+  image: '/images/logo-showroomprive-2.png',
       category: 'Enterprise Platform',
       details: {
         duration: '15 months (October 2022 – December 2023)',
@@ -77,7 +77,7 @@ export function Projects() {
       title: 'Return Marketplace',
       description: 'Development of a Return Management Solution for marketplace products on Showroomprive.com, automating the product return workflow and enhancing user experience.',
   technologies: ['.NET', 'Angular', 'WebForms', 'Front Microservices', 'XUnit', 'Azure DevOps', 'BFF Pattern'],
-      image: '/images/logo-showroomprive%202.png',
+  image: '/images/logo-showroomprive-2.png',
       category: 'E-commerce',
       details: {
         duration: '5 months (January 2024 – May 2024)',

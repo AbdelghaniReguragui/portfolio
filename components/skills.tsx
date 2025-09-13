@@ -11,21 +11,21 @@ export function Skills() {
       gradient: greenGradient,
       skills: [
   { name: 'C#', logo: '/images/Csharp_Logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'Java', logo: '/images/java logo.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
-  { name: 'Python', logo: '/images/python logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'JavaScript', logo: '/images/js logo.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
-  { name: 'PHP', logo: '/images/php logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true }
+  { name: 'Java', logo: '/images/java-logo.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
+  { name: 'Python', logo: '/images/python-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'JavaScript', logo: '/images/js-logo.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
+  { name: 'PHP', logo: '/images/php-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true }
       ]
     },
     {
       category: 'Frontend',
       gradient: greenGradient,
       skills: [
-  { name: 'React', logo: '/images/react logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'Angular', logo: '/images/angular logo.webp', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
-  { name: 'ASP.NET MVC', logo: '/images/asp.net mvc logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'Razor Pages', logo: '/images/razor pages logo.webp', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
-  { name: 'HTML/CSS', logo: '/images/html css logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true }
+  { name: 'React', logo: '/images/react-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'Angular', logo: '/images/angular-logo.webp', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
+  { name: 'ASP.NET MVC', logo: '/images/asp.net-mvc-logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'Razor Pages', logo: '/images/razor-pages-logo.webp', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
+  { name: 'HTML/CSS', logo: '/images/html-css-logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true }
       ]
     },
     {
@@ -34,38 +34,38 @@ export function Skills() {
       skills: [
   { name: '.NET Core', logo: '/images/dotnet-core-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
   { name: '.NET 6/8', logo: '/images/dotnet-6-8-logo.jpg', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
-  { name: 'Java Spring', logo: '/images/spring logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'Clean Architecture', logo: '/images/clean archi logo.webp', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
-  { name: 'CQRS', logo: '/images/cqrs logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'DDD', logo: '/images/ddd logo.jpg', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true }
+  { name: 'Java Spring', logo: '/images/spring-logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'Clean Architecture', logo: '/images/clean-archi-logo.webp', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
+  { name: 'CQRS', logo: '/images/cqrs-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'DDD', logo: '/images/ddd-logo.jpg', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true }
       ]
     },
     {
       category: 'Databases',
       gradient: greenGradient,
       skills: [
-  { name: 'MySQL', logo: '/images/mysql logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'MongoDB', logo: '/images/mongodb logo.jpg', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
-  { name: 'Firebase', logo: '/images/firebase logo.jpg', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'Oracle', logo: '/images/oracle logo.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true }
+  { name: 'MySQL', logo: '/images/mysql-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'MongoDB', logo: '/images/mongodb-logo.jpg', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
+  { name: 'Firebase', logo: '/images/firebase-logo.jpg', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'Oracle', logo: '/images/oracle-logo.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true }
       ]
     },
     {
       category: 'Tools & DevOps',
       gradient: greenGradient,
       skills: [
-  { name: 'Azure DevOps', logo: '/images/azure devops logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'Azure DevOps', logo: '/images/azure-devops-logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
   { name: 'Grafana', logo: '/images/grafana.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
-  { name: 'Apache Kafka', logo: '/images/apache kafka.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'Azure Service Bus', logo: '/images/azure service bus.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true }
+  { name: 'Apache Kafka', logo: '/images/apache-kafka.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'Azure Service Bus', logo: '/images/azure-service-bus.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true }
       ]
     },
     {
       category: 'Testing',
       gradient: greenGradient,
       skills: [
-  { name: 'XUnit', logo: '/images/x unit.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
-  { name: 'Unit Testing', logo: '/images/unit tstnig.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
+  { name: 'XUnit', logo: '/images/x-unit.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'Unit Testing', logo: '/images/unit-tstnig.png', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
   { name: 'Integration Testing', logo: '/images/integration-testing.avif', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true }
       ]
     },
