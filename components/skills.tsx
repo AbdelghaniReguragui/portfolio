@@ -23,7 +23,7 @@ export function Skills() {
       skills: [
   { name: 'React', logo: '/images/react-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
   { name: 'Angular', logo: '/images/angular-logo.webp', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
-  { name: 'ASP.NET MVC', logo: '/images/asp.net-mvc-logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
+  { name: 'ASP.NET MVC', logo: '/images/asp.net-mvc-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
   { name: 'Razor Pages', logo: '/images/razor-pages-logo.webp', color: 'bg-white/80 text-gray-900 border-slate-200/60', isImage: true },
   { name: 'HTML/CSS', logo: '/images/html-css-logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true }
       ]
