@@ -5,12 +5,12 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 export function ImageComparison() {
-  const [selectedImage, setSelectedImage] = useState<string>('abdelghani-reguragui.jpg');
+  const [selectedImage, setSelectedImage] = useState<string>('abdelghanireguragui.jpeg');
 
   const images = [
     {
-      src: '/images/abdelghani-reguragui.jpg',
-      name: 'abdelghani-reguragui.jpg',
+      src: '/images/abdelghanireguragui.jpeg',
+      name: 'abdelghanireguragui.jpeg',
       id: 'image1'
     },
     {

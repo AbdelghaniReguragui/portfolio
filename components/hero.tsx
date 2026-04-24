@@ -128,7 +128,7 @@ export function Hero() {
               <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-500 to-green-500 p-1 transition-transform duration-500 ease-in-out group-hover:scale-150 group-hover:z-50 relative">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <Image
-                    src="/images/abdelghani-reguragui.jpg"
+                      src="/images/abdelghanireguragui.jpeg"
                     alt="Abdelghani Reguragui"
                     width={600}
                     height={600}
