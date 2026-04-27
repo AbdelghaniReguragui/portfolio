@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description: 'Portfolio of Abdelghani Reguragui, Software Engineer specializing in .NET technologies, microservices architecture, and modern web development.',
   keywords: ['Software Engineer', '.NET', 'React', 'Angular', 'Microservices', 'Clean Architecture'],
   authors: [{ name: 'Abdelghani Reguragui' }],
+  verification: {
+    google: 'db1d42fa972e301a',
+  },
   openGraph: {
     title: 'Abdelghani Reguragui - Software Engineer',
     description: 'Portfolio of Abdelghani Reguragui, Software Engineer specializing in .NET technologies',
