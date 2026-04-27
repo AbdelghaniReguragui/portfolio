@@ -2,13 +2,16 @@
 
 import { motion } from 'framer-motion';
 import { Globe } from 'lucide-react';
+import { useT } from '@/components/i18n-provider';
 
 export function Languages() {
+  const t = useT();
+
   const languages = [
-    { name: 'Arabic', level: 'Native', proficiency: 100 },
-    { name: 'French', level: 'Professional', proficiency: 90 },
-    { name: 'English', level: 'Intermediate', proficiency: 75 },
-    { name: 'Spanish', level: 'Basic', proficiency: 40 }
+    { name: t('languages.arabic'), level: t('languages.levelNative'), proficiency: 100 },
+    { name: t('languages.french'), level: t('languages.levelProfessional'), proficiency: 90 },
+    { name: t('languages.english'), level: t('languages.levelIntermediate'), proficiency: 75 },
+    { name: t('languages.spanish'), level: t('languages.levelBasic'), proficiency: 40 }
   ];
 
   const getLevelColor = (proficiency: number) => {
@@ -28,9 +31,9 @@ export function Languages() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Languages</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t('languages.title')}</h2>
           <p className="text-xl text-muted-foreground">
-            Multilingual communication abilities
+            {t('languages.subtitle')}
           </p>
         </motion.div>
 

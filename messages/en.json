@@ -1,6 +1,131 @@
 {
-  "Home": {
-    "title": "Welcome to My Portfolio",
-    "welcome": "This is the English version of the site."
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greetingPrefix": "Hi, I'm",
+    "roleLine": "Software Engineer | .NET Enthusiast | Problem Solver",
+    "summary": "Passionate about designing and building robust applications with expertise in .NET technologies, microservices architecture, and modern frontend frameworks.",
+    "getInTouch": "Get In Touch",
+    "downloadCv": "Download CV",
+    "downloading": "Downloading...",
+    "location": "Casablanca, Morocco",
+    "cvNotFound": "CV file not found. Please contact me directly for my latest CV.",
+    "cvError": "Error downloading CV. Please try again or contact me directly."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a software developer with expertise in designing and building robust software solutions. I specialize in microservices architectures and .NET technologies, with hands-on experience in frontend frameworks such as React and Angular. I'm passionate about tackling complex technical challenges and working closely with business teams to deliver solutions that truly fit their needs.",
+    "highlightTechnicalTitle": "Technical Excellence",
+    "highlightTechnicalDescription": "Specialized in .NET, Java, and microservice architecture with a focus on clean, maintainable code.",
+    "highlightCollabTitle": "Team Collaboration",
+    "highlightCollabDescription": "Experienced in working with business teams to deliver tailored solutions that meet real-world needs.",
+    "highlightProblemTitle": "Problem Solving",
+    "highlightProblemDescription": "Passionate about tackling complex technical challenges and finding innovative solutions."
+  },
+  "experience": {
+    "title": "Experience",
+    "position": "Software Engineer",
+    "period": "2022 - Present",
+    "location": "Casablanca, Morocco",
+    "achievement1": "Developed .NET 6/8 and Java backends for high-traffic e-commerce platforms",
+    "achievement2": "Implemented frontend components in Angular, ASP.NET, and React",
+    "achievement3": "Architected microservices using Clean Architecture and CQRS patterns",
+    "achievement4": "Integrated messaging systems with Kafka and Azure Service Bus",
+    "achievement5": "Managed NoSQL databases with MongoDB for scalable data solutions",
+    "achievement6": "Delivered comprehensive test coverage with XUnit testing framework",
+    "achievement7": "Monitored applications using Grafana and managed CI/CD with Azure DevOps",
+    "achievement8": "Maintained and enhanced Sciforma project management tools"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Technologies and tools I work with",
+    "categoryLanguages": "Languages",
+    "categoryFrontend": "Frontend",
+    "categoryBackend": "Backend",
+    "categoryDatabases": "Databases",
+    "categoryTools": "Tools & DevOps",
+    "categoryTesting": "Testing",
+    "categoryMobile": "Mobile"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Key projects showcasing technical expertise and problem-solving skills",
+    "categoryEcommerce": "E-commerce",
+    "categoryEnterprise": "Enterprise Platform",
+    "techStack": "Tech Stack:",
+    "viewDetails": "View Details",
+    "duration": "Duration",
+    "teamSize": "Team Size",
+    "myRole": "My Role",
+    "technologiesUsed": "Technologies Used",
+    "keyChallenges": "Key Challenges",
+    "keyAchievements": "Key Achievements",
+    "myResponsibilities": "My Responsibilities"
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Academic background and qualifications",
+    "location": "Casablanca, Morocco",
+    "degree1Title": "Engineering Degree in Computer Science",
+    "degree1Period": "2019 - 2022",
+    "degree1Description1": "Advanced studies in software engineering with a strong focus on design patterns, software architectures, best coding practices, and modern frameworks.",
+    "degree1Description2": "Gained expertise in software development, system design, and project management methodologies.",
+    "degree2Title": "Integrated Preparatory Classes",
+    "degree2Period": "2017 - 2019",
+    "degree2Description1": "Acquired solid foundations in computer science fundamentals, algorithms, and data structures.",
+    "degree2Description2": "Practiced programming with multiple languages including C, Java, and other modern languages."
+  },
+  "certifications": {
+    "title": "Certifications",
+    "subtitle": "Professional certifications and continuous learning",
+    "cert1Title": "Frontend Development",
+    "cert1Description": "Comprehensive frontend development program covering React, JavaScript, HTML/CSS, and modern web development practices.",
+    "cert2Title": "Programming with JavaScript",
+    "cert2Description": "Advanced JavaScript programming certification covering ES6+, async programming, and modern JavaScript frameworks.",
+    "cert3Title": "HTML and CSS in Depth",
+    "cert3Description": "Deep dive into HTML5 and CSS3, covering advanced styling techniques, animations, and responsive design principles.",
+    "skillsCovered": "Skills Covered:",
+    "viewCertificate": "View Certificate"
+  },
+  "languages": {
+    "title": "Languages",
+    "subtitle": "Multilingual communication abilities",
+    "arabic": "Arabic",
+    "french": "French",
+    "english": "English",
+    "spanish": "Spanish",
+    "levelNative": "Native",
+    "levelProfessional": "Professional",
+    "levelIntermediate": "Intermediate",
+    "levelBasic": "Basic"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's discuss your next project or opportunity",
+    "contactInformation": "Contact Information",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Your email client will open with a pre-filled message. Thank you!",
+    "errorMessage": "Error while preparing the message. Please send me an email directly: abdelghanireguragui@gmail.com",
+    "defaultSubject": "Message from Portfolio",
+    "sentFrom": "Sent from",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location"
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "by": "by",
+    "rights": "All rights reserved."
   }
 }

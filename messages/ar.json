@@ -1,0 +1,131 @@
+{
+  "navigation": {
+    "home": "الرئيسية",
+    "about": "عني",
+    "experience": "الخبرة",
+    "skills": "المهارات",
+    "projects": "المشاريع",
+    "contact": "التواصل"
+  },
+  "hero": {
+    "greetingPrefix": "مرحباً، أنا",
+    "roleLine": "مهندس برمجيات | متخصص .NET | محلل مشاكل",
+    "summary": "شغوف بتصميم وبناء تطبيقات قوية، مع خبرة في تقنيات .NET ومعمارية الخدمات المصغرة وأطر العمل الحديثة.",
+    "getInTouch": "تواصل معي",
+    "downloadCv": "تحميل السيرة الذاتية",
+    "downloading": "جاري التحميل...",
+    "location": "الدار البيضاء، المغرب",
+    "cvNotFound": "ملف السيرة الذاتية غير موجود. يرجى التواصل معي مباشرة للحصول على النسخة الأخيرة.",
+    "cvError": "خطأ في تحميل السيرة الذاتية. يرجى المحاولة مرة أخرى أو التواصل معي مباشرة."
+  },
+  "about": {
+    "title": "نبذة عني",
+    "description": "أنا مطور برمجيات متخصص في تصميم وبناء حلول برمجية متينة. أتخصص في معماريات الخدمات المصغرة وتقنيات .NET، مع خبرة عملية في أطر العمل الأمامية كـ React وAngular. أنا شغوف بمواجهة التحديات التقنية المعقدة والتعاون مع الفرق لتقديم حلول مناسبة للاحتياجات الفعلية.",
+    "highlightTechnicalTitle": "التميز التقني",
+    "highlightTechnicalDescription": "متخصص في .NET وJava ومعمارية الخدمات المصغرة مع التركيز على كود نظيف وقابل للصيانة.",
+    "highlightCollabTitle": "العمل الجماعي",
+    "highlightCollabDescription": "خبرة في العمل مع فرق الأعمال لتقديم حلول مخصصة تلبي الاحتياجات الفعلية.",
+    "highlightProblemTitle": "حل المشكلات",
+    "highlightProblemDescription": "شغوف بمواجهة التحديات التقنية المعقدة وإيجاد حلول مبتكرة."
+  },
+  "experience": {
+    "title": "الخبرة المهنية",
+    "position": "مهندس برمجيات",
+    "period": "2022 - الحاضر",
+    "location": "الدار البيضاء، المغرب",
+    "achievement1": "تطوير خوادم .NET 6/8 وJava لمنصات التجارة الإلكترونية عالية الحركة",
+    "achievement2": "تنفيذ مكونات الواجهة الأمامية في Angular وASP.NET وReact",
+    "achievement3": "تصميم خدمات مصغرة باستخدام Clean Architecture وCQRS",
+    "achievement4": "دمج أنظمة الرسائل مع Kafka وAzure Service Bus",
+    "achievement5": "إدارة قواعد بيانات NoSQL مع MongoDB لحلول قابلة للتوسع",
+    "achievement6": "تحقيق تغطية اختبارات شاملة مع XUnit",
+    "achievement7": "مراقبة التطبيقات باستخدام Grafana وإدارة CI/CD عبر Azure DevOps",
+    "achievement8": "صيانة وتطوير أدوات Sciforma"
+  },
+  "skills": {
+    "title": "المهارات والتقنيات",
+    "subtitle": "التقنيات والأدوات التي أعمل بها",
+    "categoryLanguages": "لغات البرمجة",
+    "categoryFrontend": "الواجهة الأمامية",
+    "categoryBackend": "الخادم",
+    "categoryDatabases": "قواعد البيانات",
+    "categoryTools": "الأدوات والنشر",
+    "categoryTesting": "الاختبار",
+    "categoryMobile": "الجوال"
+  },
+  "projects": {
+    "title": "المشاريع البارزة",
+    "subtitle": "مشاريع رئيسية تُبرز الخبرة التقنية وحل المشكلات",
+    "categoryEcommerce": "التجارة الإلكترونية",
+    "categoryEnterprise": "منصة المؤسسات",
+    "techStack": "التقنيات المستخدمة:",
+    "viewDetails": "عرض التفاصيل",
+    "duration": "المدة",
+    "teamSize": "حجم الفريق",
+    "myRole": "دوري",
+    "technologiesUsed": "التقنيات المستخدمة",
+    "keyChallenges": "التحديات الرئيسية",
+    "keyAchievements": "الإنجازات الرئيسية",
+    "myResponsibilities": "مسؤولياتي"
+  },
+  "education": {
+    "title": "التعليم",
+    "subtitle": "الخلفية الأكاديمية والمؤهلات",
+    "location": "الدار البيضاء، المغرب",
+    "degree1Title": "شهادة مهندس في علوم الحاسوب",
+    "degree1Period": "2019 - 2022",
+    "degree1Description1": "دراسات متقدمة في هندسة البرمجيات مع تركيز قوي على أنماط التصميم ومعماريات البرمجيات وأفضل ممارسات الكود وأطر العمل الحديثة.",
+    "degree1Description2": "اكتساب خبرة في تطوير البرمجيات وتصميم الأنظمة ومنهجيات إدارة المشاريع.",
+    "degree2Title": "الفصول التحضيرية المتكاملة",
+    "degree2Period": "2017 - 2019",
+    "degree2Description1": "اكتساب أسس راسخة في أساسيات علوم الحاسوب والخوارزميات وهياكل البيانات.",
+    "degree2Description2": "ممارسة البرمجة بلغات متعددة بما فيها C وJava ولغات حديثة أخرى."
+  },
+  "certifications": {
+    "title": "الشهادات",
+    "subtitle": "الشهادات المهنية والتعلم المستمر",
+    "cert1Title": "تطوير الواجهة الأمامية",
+    "cert1Description": "برنامج شامل لتطوير الواجهة الأمامية يغطي React وJavaScript وHTML/CSS وممارسات تطوير الويب الحديثة.",
+    "cert2Title": "البرمجة بـ JavaScript",
+    "cert2Description": "شهادة متقدمة في JavaScript تغطي ES6+ والبرمجة غير المتزامنة وأطر عمل JavaScript الحديثة.",
+    "cert3Title": "HTML وCSS المتعمق",
+    "cert3Description": "تعمق في HTML5 وCSS3 يغطي تقنيات التصميم المتقدمة والحركات ومبادئ التصميم المتجاوب.",
+    "skillsCovered": "المهارات المشمولة:",
+    "viewCertificate": "عرض الشهادة"
+  },
+  "languages": {
+    "title": "اللغات",
+    "subtitle": "قدرات التواصل متعددة اللغات",
+    "arabic": "العربية",
+    "french": "الفرنسية",
+    "english": "الإنجليزية",
+    "spanish": "الإسبانية",
+    "levelNative": "اللغة الأم",
+    "levelProfessional": "احترافي",
+    "levelIntermediate": "متوسط",
+    "levelBasic": "مبتدئ"
+  },
+  "contact": {
+    "title": "تواصل معي",
+    "subtitle": "لنتحدث عن مشروعك القادم أو الفرصة",
+    "contactInformation": "معلومات التواصل",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "subject": "الموضوع",
+    "message": "الرسالة",
+    "sendMessage": "إرسال الرسالة",
+    "sending": "جاري الإرسال...",
+    "successMessage": "سيتم فتح عميل البريد الإلكتروني مع رسالة مملوءة مسبقاً. شكراً!",
+    "errorMessage": "خطأ في تحضير الرسالة. يرجى مراسلتي مباشرة: abdelghanireguragui@gmail.com",
+    "defaultSubject": "رسالة من الموقع",
+    "sentFrom": "أُرسل من",
+    "emailLabel": "البريد الإلكتروني",
+    "phoneLabel": "الهاتف",
+    "locationLabel": "الموقع"
+  },
+  "footer": {
+    "madeWith": "صنع بـ",
+    "by": "بواسطة",
+    "rights": "جميع الحقوق محفوظة."
+  }
+}

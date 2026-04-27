@@ -3,25 +3,28 @@
 import { motion } from 'framer-motion';
 import { Award, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useT } from '@/components/i18n-provider';
 
 export function Certifications() {
+  const t = useT();
+
   const certifications = [
     {
-      title: 'Frontend Development',
+      title: t('certifications.cert1Title'),
       issuer: 'Meta',
-      description: 'Comprehensive frontend development program covering React, JavaScript, HTML/CSS, and modern web development practices.',
+      description: t('certifications.cert1Description'),
       skills: ['React', 'JavaScript', 'HTML/CSS', 'Responsive Design']
     },
     {
-      title: 'Programming with JavaScript',
+      title: t('certifications.cert2Title'),
       issuer: 'Meta',
-      description: 'Advanced JavaScript programming certification covering ES6+, async programming, and modern JavaScript frameworks.',
+      description: t('certifications.cert2Description'),
       skills: ['JavaScript ES6+', 'Async Programming', 'DOM Manipulation', 'API Integration']
     },
     {
-      title: 'HTML and CSS in Depth',
+      title: t('certifications.cert3Title'),
       issuer: 'Meta',
-      description: 'Deep dive into HTML5 and CSS3, covering advanced styling techniques, animations, and responsive design principles.',
+      description: t('certifications.cert3Description'),
       skills: ['HTML5', 'CSS3', 'Flexbox', 'Grid', 'Animations']
     }
   ];
@@ -36,9 +39,9 @@ export function Certifications() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Certifications</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t('certifications.title')}</h2>
           <p className="text-xl text-muted-foreground">
-            Professional certifications and continuous learning
+            {t('certifications.subtitle')}
           </p>
         </motion.div>
 
@@ -67,7 +70,7 @@ export function Certifications() {
               </p>
 
               <div className="mb-4">
-                <h4 className="font-semibold mb-2 text-sm">Skills Covered:</h4>
+                <h4 className="font-semibold mb-2 text-sm">{t('certifications.skillsCovered')}</h4>
                 <div className="flex flex-wrap gap-1">
                   {cert.skills.map((skill) => (
                     <span
@@ -82,7 +85,7 @@ export function Certifications() {
 
               <Button variant="outline" size="sm" className="w-full">
                 <ExternalLink className="w-4 h-4 mr-2" />
-                View Certificate
+                {t('certifications.viewCertificate')}
               </Button>
             </motion.div>
           ))}

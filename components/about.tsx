@@ -2,29 +2,32 @@
 
 import { motion } from 'framer-motion';
 import { Code, Users, Zap } from 'lucide-react';
+import { useT } from '@/components/i18n-provider';
 
 export function About() {
+  const t = useT();
+
   const highlights = [
     {
       icon: Code,
-      title: 'Technical Excellence',
-      description: 'Specialized in .NET, Java, and microservice architecture with a focus on clean, maintainable code.',
+      title: t('about.highlightTechnicalTitle'),
+      description: t('about.highlightTechnicalDescription'),
       gradient: 'from-green-500/20 via-emerald-500/20 to-teal-500/20',
       iconBg: 'bg-gradient-to-br from-green-500 to-emerald-600',
       iconColor: 'text-white'
     },
     {
       icon: Users,
-      title: 'Team Collaboration',
-      description: 'Experienced in working with business teams to deliver tailored solutions that meet real-world needs.',
+      title: t('about.highlightCollabTitle'),
+      description: t('about.highlightCollabDescription'),
       gradient: 'from-green-500/20 via-emerald-500/20 to-teal-500/20',
       iconBg: 'bg-gradient-to-br from-green-500 to-emerald-600',
       iconColor: 'text-white'
     },
     {
       icon: Zap,
-      title: 'Problem Solving',
-      description: 'Passionate about tackling complex technical challenges and finding innovative solutions.',
+      title: t('about.highlightProblemTitle'),
+      description: t('about.highlightProblemDescription'),
       gradient: 'from-green-500/20 via-emerald-500/20 to-teal-500/20',
       iconBg: 'bg-gradient-to-br from-green-500 to-emerald-600',
       iconColor: 'text-white'
@@ -41,9 +44,9 @@ export function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t('about.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I'm a software developer with expertise in designing and building robust software solutions. I specialize in microservices architectures and .NET technologies, with hands-on experience in frontend frameworks such as React and Angular. I'm passionate about tackling complex technical challenges and working closely with business teams to deliver solutions that truly fit their needs.
+            {t('about.description')}
           </p>
         </motion.div>
 

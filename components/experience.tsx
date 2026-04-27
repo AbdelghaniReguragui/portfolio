@@ -2,13 +2,16 @@
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 import Image from 'next/image';
+import { useT } from '@/components/i18n-provider';
 
 export function Experience() {
+  const t = useT();
+
   const exp = {
     company: 'Akkodis',
-    position: 'Software Engineer',
-    period: '2022 – Present',
-    location: 'Casablanca, Morocco',
+    position: t('experience.position'),
+    period: t('experience.period'),
+    location: t('experience.location'),
     companyLogo: '/images/akkodis-image.png',
     companyUrl: 'https://www.akkodis.com',
     projectLogos: [
@@ -24,14 +27,14 @@ export function Experience() {
       },
     ],
     achievements: [
-      'Developed .NET 6/8 and Java backends for high-traffic e-commerce platforms',
-      'Implemented frontend components in Angular, ASP.NET, and React',
-      'Architected microservices using Clean Architecture and CQRS patterns',
-      'Integrated messaging systems with Kafka and Azure Service Bus',
-      'Managed NoSQL databases with MongoDB for scalable data solutions',
-      'Delivered comprehensive test coverage with XUnit testing framework',
-      'Monitored applications using Grafana and managed CI/CD with Azure DevOps',
-      'Maintained and enhanced Sciforma project management tools',
+      t('experience.achievement1'),
+      t('experience.achievement2'),
+      t('experience.achievement3'),
+      t('experience.achievement4'),
+      t('experience.achievement5'),
+      t('experience.achievement6'),
+      t('experience.achievement7'),
+      t('experience.achievement8'),
     ],
     projects_list: [
       'PIM (Product Information Management)',
@@ -51,7 +54,7 @@ export function Experience() {
           viewport={{ once: true }}
           className="mb-10 text-center"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-2">Experience</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-2">{t('experience.title')}</h2>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

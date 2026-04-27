@@ -4,24 +4,27 @@ import { useState, useEffect } from 'react';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
+import { LanguageSwitcher } from '@/components/language-switcher';
+import { useT } from '@/components/i18n-provider';
 
 
 export function Navigation() {
   const [mounted, setMounted] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const t = useT();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#experience', label: 'Experience' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#home', label: t('navigation.home') },
+    { href: '#about', label: t('navigation.about') },
+    { href: '#experience', label: t('navigation.experience') },
+    { href: '#skills', label: t('navigation.skills') },
+    { href: '#projects', label: t('navigation.projects') },
+    { href: '#contact', label: t('navigation.contact') },
   ];
 
   const scrollToSection = (href: string) => {
@@ -52,6 +55,8 @@ export function Navigation() {
               </button>
             ))}
 
+            <LanguageSwitcher />
+
             <Button
               variant="outline"
               size="icon"
@@ -63,6 +68,7 @@ export function Navigation() {
 
           {/* Mobile Navigation */}
           <div className="md:hidden flex items-center space-x-2">
+            <LanguageSwitcher />
             <Button
               variant="outline"
               size="icon"

@@ -2,8 +2,11 @@
 
 import { motion } from 'framer-motion';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
+import { useT } from '@/components/i18n-provider';
 
 export function Education() {
+  const t = useT();
+
   return (
   <section id="education" className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,9 +17,9 @@ export function Education() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 dark:text-white">Education</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 dark:text-white">{t('education.title')}</h2>
           <p className="text-xl text-muted-foreground dark:text-gray-300">
-            Academic background and qualifications
+            {t('education.subtitle')}
           </p>
         </motion.div>
 
@@ -37,26 +40,26 @@ export function Education() {
               </div>
               
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2 dark:text-white">Engineering Degree in Computer Science</h3>
+                <h3 className="text-2xl font-bold mb-2 dark:text-white">{t('education.degree1Title')}</h3>
                 <h4 className="text-xl text-blue-600 dark:text-blue-400 font-semibold mb-4">Université Mundiapolis</h4>
                 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6 text-muted-foreground dark:text-gray-400">
                   <div className="flex items-center">
                     <Calendar className="w-4 h-4 mr-2" />
-                    2019 – 2022
+                    {t('education.degree1Period')}
                   </div>
                   <div className="flex items-center">
                     <MapPin className="w-4 h-4 mr-2" />
-                    Casablanca, Morocco
+                    {t('education.location')}
                   </div>
                 </div>
 
                 <div className="prose prose-gray max-w-none dark:prose-invert">
                   <p className="text-muted-foreground dark:text-gray-300 leading-relaxed mb-4">
-                    Advanced studies in software engineering with a strong focus on design patterns, software architectures, best coding practices, and modern frameworks.
+                    {t('education.degree1Description1')}
                   </p>
                   <p className="text-muted-foreground dark:text-gray-300 leading-relaxed">
-                    Gained expertise in software development, system design, and project management methodologies.
+                    {t('education.degree1Description2')}
                   </p>
                 </div>
               </div>
@@ -73,26 +76,26 @@ export function Education() {
               </div>
               
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2 dark:text-white">Integrated Preparatory Classes</h3>
+                <h3 className="text-2xl font-bold mb-2 dark:text-white">{t('education.degree2Title')}</h3>
                 <h4 className="text-xl text-green-600 dark:text-green-400 font-semibold mb-4">Université Mundiapolis</h4>
                 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6 text-muted-foreground dark:text-gray-400">
                   <div className="flex items-center">
                     <Calendar className="w-4 h-4 mr-2" />
-                    2017 – 2019
+                    {t('education.degree2Period')}
                   </div>
                   <div className="flex items-center">
                     <MapPin className="w-4 h-4 mr-2" />
-                    Casablanca, Morocco
+                    {t('education.location')}
                   </div>
                 </div>
 
                 <div className="prose prose-gray max-w-none dark:prose-invert">
                   <p className="text-muted-foreground dark:text-gray-300 leading-relaxed mb-4">
-                    Acquired solid foundations in computer science fundamentals, algorithms, and data structures.
+                    {t('education.degree2Description1')}
                   </p>
                   <p className="text-muted-foreground dark:text-gray-300 leading-relaxed">
-                    Practiced programming with multiple languages including C, Java, and other modern languages.
+                    {t('education.degree2Description2')}
                   </p>
                 </div>
               </div>

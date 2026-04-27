@@ -2,12 +2,14 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useT } from '@/components/i18n-provider';
 
 export function Skills() {
+  const t = useT();
   const greenGradient = 'from-green-500/20 via-emerald-500/20 to-teal-500/20';
   const skillCategories = [
     {
-      category: 'Languages',
+      category: t('skills.categoryLanguages'),
       gradient: greenGradient,
       skills: [
   { name: 'C#', logo: '/images/Csharp_Logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
@@ -18,7 +20,7 @@ export function Skills() {
       ]
     },
     {
-      category: 'Frontend',
+      category: t('skills.categoryFrontend'),
       gradient: greenGradient,
       skills: [
   { name: 'React', logo: '/images/react-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
@@ -29,7 +31,7 @@ export function Skills() {
       ]
     },
     {
-      category: 'Backend',
+      category: t('skills.categoryBackend'),
       gradient: greenGradient,
       skills: [
   { name: '.NET Core', logo: '/images/dotnet-core-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
@@ -41,7 +43,7 @@ export function Skills() {
       ]
     },
     {
-      category: 'Databases',
+      category: t('skills.categoryDatabases'),
       gradient: greenGradient,
       skills: [
   { name: 'MySQL', logo: '/images/mysql-logo.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
@@ -51,7 +53,7 @@ export function Skills() {
       ]
     },
     {
-      category: 'Tools & DevOps',
+      category: t('skills.categoryTools'),
       gradient: greenGradient,
       skills: [
   { name: 'Azure DevOps', logo: '/images/azure-devops-logo.webp', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
@@ -61,7 +63,7 @@ export function Skills() {
       ]
     },
     {
-      category: 'Testing',
+      category: t('skills.categoryTesting'),
       gradient: greenGradient,
       skills: [
   { name: 'XUnit', logo: '/images/x-unit.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
@@ -70,7 +72,7 @@ export function Skills() {
       ]
     },
     {
-      category: 'Mobile',
+      category: t('skills.categoryMobile'),
       gradient: greenGradient,
       skills: [
   { name: 'Flutter', logo: '/images/flutter.png', color: 'bg-white/80 text-slate-900 border-slate-200/60', isImage: true },
@@ -93,9 +95,9 @@ export function Skills() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Skills & Technologies</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t('skills.title')}</h2>
           <p className="text-xl text-muted-foreground">
-            Technologies and tools I work with
+            {t('skills.subtitle')}
           </p>
         </motion.div>
 

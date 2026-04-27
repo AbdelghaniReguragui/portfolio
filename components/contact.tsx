@@ -6,8 +6,11 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useState } from 'react';
+import { useT } from '@/components/i18n-provider';
 
 export function Contact() {
+  const t = useT();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,20 +24,20 @@ export function Contact() {
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
+      label: t('contact.emailLabel'),
       value: 'abdelghanireguragui@gmail.com',
       href: 'mailto:abdelghanireguragui@gmail.com'
     },
     {
       icon: Phone,
-      label: 'Phone',
+      label: t('contact.phoneLabel'),
       value: '+212 629 832 941',
       href: 'tel:+212629832941'
     },
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'Casablanca, Morocco',
+      label: t('contact.locationLabel'),
+      value: t('hero.location'),
       href: null
     },
     {
@@ -51,13 +54,13 @@ export function Contact() {
     
     try {
       // Créer le contenu de l'email formaté
-      const emailSubject = encodeURIComponent(formData.subject || 'Message from Portfolio');
+      const emailSubject = encodeURIComponent(formData.subject || t('contact.defaultSubject'));
       const emailBody = encodeURIComponent(
-        `Nom: ${formData.name}\n` +
-        `Email: ${formData.email}\n` +
-        `Sujet: ${formData.subject}\n\n` +
-        `Message:\n${formData.message}\n\n` +
-        `---\nEnvoyé depuis: https://abdelghanireguragui.com`
+        `${t('contact.name')}: ${formData.name}\n` +
+        `${t('contact.email')}: ${formData.email}\n` +
+        `${t('contact.subject')}: ${formData.subject}\n\n` +
+        `${t('contact.message')}:\n${formData.message}\n\n` +
+        `---\n${t('contact.sentFrom')}: https://abdelghanireguragui.com`
       );
       
       // Ouvrir le client email avec les données pré-remplies
@@ -109,9 +112,9 @@ export function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t('contact.title')}</h2>
           <p className="text-xl text-muted-foreground">
-            Let's discuss your next project or opportunity
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
@@ -122,7 +125,7 @@ export function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold mb-6">{t('contact.contactInformation')}</h3>
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <motion.div
@@ -166,7 +169,7 @@ export function Contact() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Name
+                    {t('contact.name')}
                   </label>
                   <Input
                     id="name"
@@ -178,7 +181,7 @@ export function Contact() {
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email
+                    {t('contact.email')}
                   </label>
                   <Input
                     id="email"
@@ -193,7 +196,7 @@ export function Contact() {
               
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                  Subject
+                  {t('contact.subject')}
                 </label>
                 <Input
                   id="subject"
@@ -206,7 +209,7 @@ export function Contact() {
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Message
+                  {t('contact.message')}
                 </label>
                 <Textarea
                   id="message"
@@ -224,14 +227,14 @@ export function Contact() {
                 disabled={isSubmitting}
               >
                 <Send className="w-4 h-4 mr-2" />
-                {isSubmitting ? 'Envoi en cours...' : 'Send Message'}
+                {isSubmitting ? t('contact.sending') : t('contact.sendMessage')}
               </Button>
               
               {/* Messages de statut */}
               {submitStatus === 'success' && (
                 <div className="mt-4 p-4 bg-green-100 dark:bg-green-900/20 border border-green-300 dark:border-green-800 rounded-lg">
                   <p className="text-green-700 dark:text-green-300 text-sm">
-                    ✅ Votre client email va s'ouvrir avec le message pré-rempli. Merci !
+                    {t('contact.successMessage')}
                   </p>
                 </div>
               )}
@@ -239,7 +242,7 @@ export function Contact() {
               {submitStatus === 'error' && (
                 <div className="mt-4 p-4 bg-red-100 dark:bg-red-900/20 border border-red-300 dark:border-red-800 rounded-lg">
                   <p className="text-red-700 dark:text-red-300 text-sm">
-                    ❌ Erreur lors de l'envoi. Veuillez essayer de m'envoyer un email directement : abdelghanireguragui@gmail.com
+                    {t('contact.errorMessage')}
                   </p>
                 </div>
               )}

@@ -1,6 +1,131 @@
 {
-  "Home": {
-    "title": "Bienvenue sur mon portfolio",
-    "welcome": "Ceci est la version française du site."
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greetingPrefix": "Bonjour, je suis",
+    "roleLine": "Ingénieur logiciel | Passionné par .NET | Résolveur de problèmes",
+    "summary": "Passionné par la conception et le développement d'applications robustes, avec une expertise en technologies .NET, architecture microservices et frameworks frontend modernes.",
+    "getInTouch": "Me Contacter",
+    "downloadCv": "Télécharger le CV",
+    "downloading": "Téléchargement en cours...",
+    "location": "Casablanca, Maroc",
+    "cvNotFound": "Fichier CV introuvable. Merci de me contacter directement pour la dernière version.",
+    "cvError": "Erreur lors du téléchargement du CV. Merci de réessayer ou de me contacter directement."
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description": "Je suis développeur logiciel, spécialisé dans la conception et la réalisation de solutions robustes. Je me concentre sur les architectures microservices et les technologies .NET, avec une expérience pratique sur React et Angular. J'aime résoudre des problèmes techniques complexes et collaborer avec les équipes métier pour livrer des solutions vraiment adaptées.",
+    "highlightTechnicalTitle": "Excellence Technique",
+    "highlightTechnicalDescription": "Spécialisé en .NET, Java et architecture microservices avec un focus sur un code propre et maintenable.",
+    "highlightCollabTitle": "Collaboration d'Équipe",
+    "highlightCollabDescription": "Expérience de travail avec les équipes métier pour livrer des solutions adaptées aux besoins réels.",
+    "highlightProblemTitle": "Résolution de Problèmes",
+    "highlightProblemDescription": "Passionné par les défis techniques complexes et la recherche de solutions innovantes."
+  },
+  "experience": {
+    "title": "Expérience",
+    "position": "Ingénieur Logiciel",
+    "period": "2022 - Aujourd'hui",
+    "location": "Casablanca, Maroc",
+    "achievement1": "Développement de backends .NET 6/8 et Java pour des plateformes e-commerce à fort trafic",
+    "achievement2": "Implémentation de composants frontend en Angular, ASP.NET et React",
+    "achievement3": "Conception de microservices avec Clean Architecture et CQRS",
+    "achievement4": "Intégration de systèmes de messagerie avec Kafka et Azure Service Bus",
+    "achievement5": "Gestion de bases NoSQL avec MongoDB pour des solutions scalables",
+    "achievement6": "Mise en place d'une couverture de tests complète avec XUnit",
+    "achievement7": "Supervision applicative avec Grafana et gestion CI/CD via Azure DevOps",
+    "achievement8": "Maintenance et évolution des outils Sciforma"
+  },
+  "skills": {
+    "title": "Compétences & Technologies",
+    "subtitle": "Technologies et outils que j'utilise",
+    "categoryLanguages": "Langages",
+    "categoryFrontend": "Frontend",
+    "categoryBackend": "Backend",
+    "categoryDatabases": "Bases de données",
+    "categoryTools": "Outils & DevOps",
+    "categoryTesting": "Tests",
+    "categoryMobile": "Mobile"
+  },
+  "projects": {
+    "title": "Projets Phares",
+    "subtitle": "Projets clés mettant en avant l'expertise technique et la résolution de problèmes",
+    "categoryEcommerce": "E-commerce",
+    "categoryEnterprise": "Plateforme Entreprise",
+    "techStack": "Stack Technique :",
+    "viewDetails": "Voir les détails",
+    "duration": "Durée",
+    "teamSize": "Taille d'équipe",
+    "myRole": "Mon rôle",
+    "technologiesUsed": "Technologies utilisées",
+    "keyChallenges": "Défis principaux",
+    "keyAchievements": "Réalisations principales",
+    "myResponsibilities": "Mes responsabilités"
+  },
+  "education": {
+    "title": "Formation",
+    "subtitle": "Parcours académique et qualifications",
+    "location": "Casablanca, Maroc",
+    "degree1Title": "Diplôme d'Ingénieur en Informatique",
+    "degree1Period": "2019 - 2022",
+    "degree1Description1": "Études avancées en génie logiciel avec un fort accent sur les design patterns, les architectures logicielles, les bonnes pratiques de code et les frameworks modernes.",
+    "degree1Description2": "Acquisition d'une expertise en développement logiciel, conception de systèmes et méthodologies de gestion de projet.",
+    "degree2Title": "Classes Préparatoires Intégrées",
+    "degree2Period": "2017 - 2019",
+    "degree2Description1": "Acquisition de bases solides en fondamentaux de l'informatique, algorithmes et structures de données.",
+    "degree2Description2": "Pratique de la programmation avec plusieurs langages dont C, Java et d'autres langages modernes."
+  },
+  "certifications": {
+    "title": "Certifications",
+    "subtitle": "Certifications professionnelles et apprentissage continu",
+    "cert1Title": "Développement Frontend",
+    "cert1Description": "Programme complet de développement frontend couvrant React, JavaScript, HTML/CSS et les pratiques web modernes.",
+    "cert2Title": "Programmation avec JavaScript",
+    "cert2Description": "Certification avancée JavaScript couvrant ES6+, la programmation asynchrone et les frameworks JavaScript modernes.",
+    "cert3Title": "HTML et CSS Approfondis",
+    "cert3Description": "Approfondissement de HTML5 et CSS3 avec techniques de style avancées, animations et principes de design responsive.",
+    "skillsCovered": "Compétences couvertes :",
+    "viewCertificate": "Voir le certificat"
+  },
+  "languages": {
+    "title": "Langues",
+    "subtitle": "Capacités de communication multilingue",
+    "arabic": "Arabe",
+    "french": "Français",
+    "english": "Anglais",
+    "spanish": "Espagnol",
+    "levelNative": "Natif",
+    "levelProfessional": "Professionnel",
+    "levelIntermediate": "Intermédiaire",
+    "levelBasic": "Débutant"
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "subtitle": "Discutons de votre prochain projet ou opportunité",
+    "contactInformation": "Informations de contact",
+    "name": "Nom",
+    "email": "Email",
+    "subject": "Sujet",
+    "message": "Message",
+    "sendMessage": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "successMessage": "Votre client email va s'ouvrir avec le message prérempli. Merci !",
+    "errorMessage": "Erreur lors de la préparation du message. Veuillez m'écrire directement : abdelghanireguragui@gmail.com",
+    "defaultSubject": "Message depuis le portfolio",
+    "sentFrom": "Envoyé depuis",
+    "emailLabel": "Email",
+    "phoneLabel": "Téléphone",
+    "locationLabel": "Localisation"
+  },
+  "footer": {
+    "madeWith": "Fait avec",
+    "by": "par",
+    "rights": "Tous droits réservés."
   }
 }

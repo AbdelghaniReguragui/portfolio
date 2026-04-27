@@ -5,9 +5,11 @@ import { Download, MapPin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import Image from 'next/image';
+import { useT } from '@/components/i18n-provider';
 
 export function Hero() {
   const [isDownloading, setIsDownloading] = useState(false);
+  const t = useT();
 
   const handleDownloadCV = async () => {
     setIsDownloading(true);
@@ -25,11 +27,11 @@ export function Hero() {
         link.click();
         document.body.removeChild(link);
       } else {
-        alert('CV file not found. Please contact me directly for my latest CV.');
+        alert(t('hero.cvNotFound'));
       }
     } catch (error) {
       console.error('Error downloading CV:', error);
-      alert('Error downloading CV. Please try again or contact me directly.');
+      alert(t('hero.cvError'));
     } finally {
       setIsDownloading(false);
     }
@@ -56,7 +58,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Hi, I'm{' '}
+              {t('hero.greetingPrefix')}{' '}
               <span className="bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent">
                 Abdelghani Reguragui
               </span>
@@ -68,7 +70,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              Software Engineer | .NET Enthusiast | Problem Solver
+              {t('hero.roleLine')}
             </motion.p>
             
             <motion.p 
@@ -77,8 +79,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              Passionate about designing and building robust applications with expertise in .NET technologies, 
-              microservices architecture, and modern frontend frameworks.
+              {t('hero.summary')}
             </motion.p>
 
             <motion.div 
@@ -93,7 +94,7 @@ export function Hero() {
                 onClick={handleGetInTouch}
               >
                 <Mail className="w-4 h-4 mr-2" />
-                Get In Touch
+                {t('hero.getInTouch')}
               </Button>
               <Button 
                 variant="outline" 
@@ -103,7 +104,7 @@ export function Hero() {
                 disabled={isDownloading}
               >
                 <Download className="w-4 h-4 mr-2" />
-                {isDownloading ? 'Downloading...' : 'Download CV'}
+                {isDownloading ? t('hero.downloading') : t('hero.downloadCv')}
               </Button>
             </motion.div>
 
@@ -114,7 +115,7 @@ export function Hero() {
               transition={{ delay: 1, duration: 0.8 }}
             >
               <MapPin className="w-4 h-4 mr-2" />
-              Casablanca, Morocco
+              {t('hero.location')}
             </motion.div>
           </motion.div>
 
