@@ -70,7 +70,7 @@ export function ImageComparison() {
 
       {/* Critères d'évaluation */}
       <div className="bg-muted p-6 rounded-lg">
-        <h3 className="font-semibold mb-4">Critères d'évaluation :</h3>
+        <h3 className="font-semibold mb-4">Critères d&apos;évaluation :</h3>
         <ul className="space-y-2 text-sm">
           <li>✅ <strong>Netteté et qualité</strong> : Image claire et bien définie</li>
           <li>✅ <strong>Cadrage</strong> : Position du visage dans le cercle</li>

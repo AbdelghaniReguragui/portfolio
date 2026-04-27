@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { I18nProvider } from '@/components/i18n-provider';
 import { getMessages, isValidLocale, locales, defaultLocale } from '@/lib/i18n';
 
+export const runtime = 'edge';
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.abdelghanireguragui.com';
 
 const metaByLocale = {

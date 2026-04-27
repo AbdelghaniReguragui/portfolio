@@ -10,6 +10,8 @@ import { Languages } from '@/components/languages';
 import { Contact } from '@/components/contact';
 import { Footer } from '@/components/footer';
 
+export const runtime = 'edge';
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.abdelghanireguragui.com';
 
 const personJsonLd = {
